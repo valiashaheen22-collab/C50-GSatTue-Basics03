@@ -243,20 +243,37 @@
 #endregion
 #region Question 14
 //Write a do-while loop that prints "Checking book..." exactly 3 times
+//using System;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        int i = 0;
+
+//        do
+//        {
+//            Console.WriteLine("Checking book...");
+//            i++;
+//        }
+//        while (i < 3);
+//    }
+//}
+#endregion
+#region Question 15
+//Using the same books array, use a foreach loop to print every book title.
 using System;
 
 class Program
 {
     static void Main()
     {
-        int i = 0;
+        string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
-        do
+        foreach (string book in books)
         {
-            Console.WriteLine("Checking book...");
-            i++;
+            Console.WriteLine(book);
         }
-        while (i < 3);
     }
 }
 #endregion
